@@ -1,16 +1,36 @@
-<script 
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous">
-  $(document).ready(function() {
-      $("button").addClass("animated bounce");
-      
+<html>
+<head>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("main").css("background-color","black");
+  $("button").click(function(){
+    $("h2").hide();
   });
+});
+  $(document).ready(function(){
+    $(".flip").click(function(){
+    $(".panel").slideToggle(100);
+  });
+});      
 </script>
+</head>
 <style>
-  
+  div.panel,p.flip
+  {
+     margin:5px;
+     padding:20px;
+     text-align:center;
+     background:#CC0000;
+     border:solid 10px #0000CC;
+  }
+  div.panel
+  {
+    height:120px;
+    display:none;
+  }
   main{
-    background-color:black;
     text-align:center;
     img-align:center;
   }
@@ -20,7 +40,7 @@
      font-family:Microsoft JhengHei;
     }
    h2 {
-      color:#EB3439;
+      color:#CC0000;
       font-size:40px;
      font-family:sans-serif;
     }
@@ -34,29 +54,51 @@
 
 <main>
   <h2 class="orange-text"> ROG-REPUBLIC OF GAMERS筆電推薦</h2>
-  <p>introduction of ROG's laptop</p>
-  <button id="target2"> FUCK</button>
+  <h3>introduction of ROG's laptop</h3>
+  <div >
+        <button >Delete</button>
+<p class="flip" >更多筆電</p>
+  </div> 
+  <div class="panel">
+    <p>
+    <a href="https://www.asus.com/tw/ROG-Republic-Of-Gamers/ROG-Zephyrus-M-GM501/">ROG Zephyrus M (GM501)</a>
+    </p>
+       <p>
+    <a href="https://www.asus.com/tw/ROG-Republic-Of-Gamers/ROG-ZEPHYRUS-S-GX701/">ROG ZEPHYRUS S (GX701)
+</a>
+    </p>
+       <p>
+    <a href="https://www.asus.com/tw/ROG-Republic-Of-Gamers/ROG-Mothership-GZ700/">ROG Mothership (GZ700)
+</a>
+    </p>
+       <p>
+    <a href="https://www.asus.com/tw/ROG-Republic-Of-Gamers/ASUS-TUF-Gaming-FX505/">ASUS TUF Gaming FX505
+</a>
+    </p>
+    <h1>  </h1>
+    <h1>  </h1>
+    <h1>  </h1>
+    <h1>  </h1>
+      
+
+
+  </div>
   <a><img src="https://azcd.harveynorman.com.au/media/wysiwyg/product/featured/ROGBundle/ROG_Banner.png" alt=""></a>
   
   <div style:"color: red;">
-    <p>ROG STRIX SCAR II(GL504GM)</p>
+    <h3>ROG STRIX SCAR II(GL504GM)</h3>
     <ul>
        <a ><img src="https://uploads.ifdesign.de/award_img_336/oex_large/246529_01_gl504_b.jpg" width="700"></a>
-      <h2> ROG-Strix-SCAR II GL504</h2>
-      <h1 style:"color: red;">處理器：Intel® Core™ i7-8750H 2.2 GHz (up to 3.9 GHz) </li>
-      <h1>記憶體：DRAM DDR4 2666 8G </li>
-      <h1>硬碟：1T&8G SSH + M.2 256GB PCIe SSD </li>
-      <h1>獨立顯卡：Nvidia GeForce GTX1060 6G獨顯 </li>
-      <h1>螢幕：15.6’(薄邊框)/FHD 1920x1080 16:9/144Hz 3ms/IPS/300nits </li>
-      <h1>無線網路：802.11AC + BT 5.0 </li>
-      <h1>重量：2.4KG </li>
-      <h1>介面：HDMI、USB 3.1 Type C  </li>
+      <h3> ROG-Strix-SCAR II GL504</h3>
+      <h1 style:"color: red;">處理器：Intel® Core™ i7-8750H 2.2 GHz (up to 3.9 GHz) </h1>
+      <h1>記憶體：DRAM DDR4 2666 8G </h1>
+      <h1>硬碟：1T&8G SSH + M.2 256GB PCIe SSD </h1>
+      <h1>獨立顯卡：Nvidia GeForce GTX1060 6G獨顯 </h1>
+      <h1>螢幕：15.6’(薄邊框)/FHD 1920x1080 16:9/144Hz 3ms/IPS/300nits </h1>
+      <h1>無線網路：802.11AC + BT 5.0 </h1>
+      <h1>重量：2.4KG </h1>
+      <h1>介面：HDMI、USB 3.1 Type C  </h1>
     </ul>
-    <h2>建議售價:67900</h2>
-    <ol>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
+    <h3>建議售價:67900</h3>
+    
   </div>
-</main>
